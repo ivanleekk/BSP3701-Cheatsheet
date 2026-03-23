@@ -1,0 +1,179 @@
+\section{Class 2: External Analysis}
+\subsection{Porter Five Forces Framework}
+\textbf{Purpose:} Assess industry attractiveness and competitive intensity. Guides
+strategic positioning and resource allocation.
+\begin{center}
+    \begin{tikzpicture}[
+            font=\tiny\sffamily,
+            >=Latex,
+            node distance=3mm and 4mm,
+            box/.style={draw, rounded corners=1pt, align=center, minimum width=15mm, minimum height=5mm, fill=white},
+            comment/.style={draw, align=left, text width=30mm, rounded corners=1pt, fill=gray!5},
+            dashedarrow/.style={-{Latex}, dashed},
+            scale=1, transform shape
+        ]
+
+        % Central box
+        \node[box] (industry) {Industry Rivalry};
+
+        % Surrounding boxes
+        \node[box, above=of industry] (new) {Threat of New Entrants};
+        \node[box, below=of industry] (sub) {Threat of Substitutes};
+        \node[box, left=of industry] (sup) {Bargaining Power of Suppliers};
+        \node[box, right=of industry] (buy) {Bargaining Power of Buyers};
+
+        % Arrows
+        \draw[->] (new) -- (industry);
+        \draw[->] (sub) -- (industry);
+        \draw[->] (sup) -- (industry);
+        \draw[->] (buy) -- (industry);
+
+    \end{tikzpicture}
+\end{center}
+
+\subsubsection{Rivalry between Competitors}
+\begin{itemize}
+    \item \textbf{Price Competition:} Intense when products are undifferentiated and switching
+          costs are low. Cost alone determines which product customers buy and the most
+          efficient producer wins.
+    \item \textbf{Differentiation:} Intense when products are similar and switching costs are
+          low. Firms compete on non-price factors (e.g., quality, brand). Customer
+          loyalty can reduce price sensitivity and allow for higher margins.
+    \item \textbf{Focus on Niche:} Intense when firms target specific market segments. Firms can
+          compete on price or differentiation within the niche. Success depends on how
+          wellthe firm understands and serves the niche's unique needs.
+\end{itemize}
+
+\textbf{Generic Strategies:} Cost Leadership, Differentiation, Focus. Firms must choose
+one to avoid being ``stuck in the middle'' and losing competitive advantage.
+
+\subsubsection{Bargaining power of Suppliers}
+
+\textbf{High Power:} Few suppliers, unique products, high switching costs. Can demand
+higher prices or reduce quality. Firms may need to integrate backward or find
+alternative suppliers.
+
+\textbf{Low Power:} Many suppliers, standardized products, low switching costs. Firms
+can negotiate better terms and have more flexibility. Focus on cost control and
+supplier relationships.
+
+\textbf{Examples:} High power Airbus and Boeing for commercial aviation; Low power -
+Grab Drivers providing service for Grab.
+
+\subsubsection{Bargaining power of Buyers}
+\textbf{High Power:} Few buyers, standardized products, low switching costs, low search
+cost, low transportation cost. Can demand lower prices, better quality, or
+additional services. Firms may need to differentiate or focus on customer
+loyalty.
+
+\textbf{Low Power:} Many buyers, unique products, high switching costs. Firms have more
+pricing power and can focus on product development and marketing.
+
+\textbf{Examples:} High power - Travel Agencies can pick from many airlines to fly to
+holiday destinations; Low power - Individual consumers buying smartphones.
+
+\subsubsection{Threat of New Entrants}
+\textbf{High Threat:} Low barriers to entry, high industry growth, low capital
+requirements, easy access to distribution channels, little goverement
+regulation. New entrants can quickly gain market share and intensify
+competition. Incumbents may need to innovate or lower prices to maintain their
+position.
+
+\textbf{Low Threat:} High barriers to entry, slow industry growth, high capital
+requirements, difficult access to distribution channels, significant government
+regulation. Incumbents have a strong position and can focus on long-term
+strategies without worrying about new competitors.
+
+\textbf{Examples:} High threat - Food and Beverage industry with low capital
+requirements; Low threat - Pharmaceuticals, where many phases of trials and
+government regulations have to be passed.
+
+\subsubsection{Threat of Substitutes}
+\textbf{High Threat:} Many substitutes, low switching costs, attractive
+price-performance ratio. Can limit industry profitability as customers switch
+to alternatives. Firms may need to differentiate or innovate to stay
+competitive.
+
+\textbf{Low Threat:} Few substitutes, high switching costs, poor price-performance
+ratio. Firms have more pricing power and can focus on improving their products
+and services.
+
+\textbf{Examples:} High threat Public transportation as a substitute for private car
+ownership; Low threat - Electricity as a substitute for gasoline in the short
+term.
+
+\subsection{SWOT Analysis}
+\textbf{Purpose:} Identify internal strengths and weaknesses, and external
+opportunities and threats. Guides strategic planning and decision-making.
+\begin{tabularx}{\linewidth}{|X|X|}
+    \hline
+    \rowcolor{gray!20} \textbf{Strengths} (Internal, +)     & \textbf{Weaknesses} (Internal, -)                             \\ \hline
+    \textit{What do we do well?}                            & \textit{Where do we lack resources?}                          \\ e.g., Brand equity (Starbucks), Hub dominance
+    (Airlines).                                             & e.g., High fixed costs, rigid labor unions.                   \\ \hline
+    \rowcolor{gray!20} \textbf{Opportunities} (External, +) & \textbf{Threats} (External, -)                                \\ \hline
+    \textit{External factors to exploit.}                   & \textit{External factors that risk profits.}                  \\ e.g., Emerging markets (China), falling
+    oil prices.                                             & e.g., New LCC entrants, health trends, rising interest rates. \\
+    \hline
+\end{tabularx}
+
+\textbf{Strategy (TOWS Matrix):}
+\begin{itemize}
+    \item \textbf{S-T:} Use strengths to mitigate threats.
+    \item \textbf{W-O:} Address weaknesses to capitalize on opportunities.
+    \item \textbf{S-O:} Use strengths to exploit opportunities.
+    \item \textbf{W-T:} Defensive strategy to minimize weaknesses and avoid threats.
+\end{itemize}
+
+\section{Case: IBM's Strategic Pivot (1993)}
+\textbf{Context:} IBM faced an existential crisis as the industry shifted from a \textbf{Vertical} (proprietary/integrated) model to a \textbf{Horizontal} (fragmented/specialized) model.
+
+\subsection{Industry Shift: Vertical vs. Horizontal}
+\begin{itemize}
+    \item \textbf{Vertical (Old):} One firm (IBM) provided the processor, OS, and apps. High
+          margins but slow innovation.
+    \item \textbf{Horizontal (New):} Niche players (Intel, Microsoft, Oracle) dominated specific
+          ``slices'' of the stack.
+    \item \textbf{The Integration Crisis:} Customers struggled to integrate fragmented
+          ``piece-parts'' from different vendors, creating a ``cacophony of standards.''
+\end{itemize}
+
+\subsection{IBM SWOT Analysis (1993)}
+\begin{tabularx}{\linewidth}{|X|X|}
+    \hline
+    \rowcolor{gray!20} \textbf{Strengths}        & \textbf{Weaknesses} \\ \hline
+    \begin{itemize}
+        \item Huge Scale/Broad Capabilities
+        \item World-Class R\&D (Nobel labs)
+        \item Deeply entrenched customer roots
+    \end{itemize}   &
+    \begin{itemize}
+        \item Inefficient Cost Structure (42\textcent/\$1 rev)
+        \item Bureaucratic ``Check'' Culture
+        \item Mainframe Revenue Dependence
+    \end{itemize}          \\ \hline
+    \rowcolor{gray!20} \textbf{Opportunities}    & \textbf{Threats}    \\ \hline
+    \begin{itemize}
+        \item Demand for ``Systems Integrators''
+        \item IT Services Growth
+        \item Rise of Networked Computing
+    \end{itemize} &
+    \begin{itemize}
+        \item ``Wintel'' (MSFT/Intel) Duopoly
+        \item Commodity Pricing/PC Revolution
+        \item Commercialization Failures (UNIX)
+    \end{itemize}                         \\ \hline
+\end{tabularx}
+
+\subsection{The Gerstner Strategy (The Turnaround)}
+\begin{itemize}
+    \item \textbf{Reject the Breakup:} Leveraged IBM's size as a strength. IBM became the \textbf{Integrator} to solve customer complexity.
+    \item \textbf{Services as the ``Tail'':} Shifted focus from selling hardware to providing
+          end-to-end IT services and consulting.
+    \item \textbf{Economic Right-Sizing:} Cut \$8.9B in expenses and 35k jobs to close the
+          42\textcent\ vs 31\textcent\ efficiency gap.
+    \item \textbf{Stabilize the Core:} Lowered mainframe prices to prevent customer defection,
+          sacrificing short-term margin for long-term survival.
+\end{itemize}
+
+\textbf{Strategic Takeaway:} IBM survived by pivoting from a product-centric firm to a \textbf{solutions-centric} firm, monetizing the very ``complexity'' that the fragmented
+industry created.
