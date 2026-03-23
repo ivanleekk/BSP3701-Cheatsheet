@@ -1,0 +1,93 @@
+\section{Class 3: Internal Analysis}
+Resource Based View (RBV): Competitive advantage arises from unique, valuable,
+and hard-to-imitate resources. Focus on leveraging internal strengths to
+exploit external opportunities and mitigate threats.
+
+Has to be non-fungible, valuable, rare, and hard to imitate. Examples: Brand
+equity (Starbucks),Hub dominance (Airlines), and R\&D capabilities (IBM). These
+resources enable firms to create superior value and sustain competitive
+advantage.
+
+\subsection{VRIO Framework}
+\textbf{Valuable:} Does the resource enable the firm to exploit opportunities or
+neutralize threats? If not, it may be a competitive disadvantage.
+
+\textbf{Rare:} Is the resource controlled by a few firms? If not, it may lead to
+competitive parity.
+
+\textbf{Inimitable:} Is the resource difficult to imitate due to unique historical
+conditions, causal ambiguity, or social complexity? If not, it may lead to
+temporary competitive advantage.
+
+\textbf{Organized:} Is the firm organized to capture value from the resource? If not,
+it may lead to unrealized competitive advantage.
+
+\begin{tikzpicture}[
+        font=\sffamily\tiny,
+        >=Stealth,
+        node distance=0.5cm and 0.8cm,
+        diamond_node/.style={draw, diamond, aspect=1, minimum size=1.8cm, thick, align=center, text=white},
+        result_node/.style={draw=blue!30, fill=blue!10, rounded corners=3pt, minimum width=2cm, minimum height=1cm, align=center, thick},
+        label_node/.style={font=\sffamily\bfseries\tiny, align=center},
+        scale=0.7, transform shape
+    ]
+
+    % Top Labels
+    \node[label_node] (res_label) at (1, 1.5) {IS THE RESOURCE OR CAPABILITY...?};
+    \node[label_node] (comp_label) at (5, 1.5) {IS THE COMPANY WELL...?};
+
+    % Diamonds
+    \node[diamond_node, fill=orange] (v) {\textbf{V} \\ VALUABLE}; \node[diamond_node, fill=purple!80!black, right=of v] (r) {\textbf{R} \\ RARE}; \node[diamond_node, fill=green!50!black, right=of r] (i) {\textbf{I} \\ INIMITABLE}; \node[diamond_node, fill=cyan!70!black, right=of i] (o) {\textbf{O} \\ ORGANIZED};
+
+    % Results Bottom
+    \node[result_node, below=0.8cm of v] (res_v) {COMPETITIVE \\ DISADVANTAGE};
+    \node[result_node, below=0.8cm of r] (res_r) {COMPETITIVE \\ PARITY};
+    \node[result_node, below=0.8cm of i] (res_i) {TEMPORARY \\ COMPETITIVE \\ ADVANTAGE};
+    \node[result_node, below=0.8cm of o] (res_o) {UNUSED \\ COMPETITIVE \\ ADVANTAGE};
+
+    % Final Result Right
+    \node[result_node, right=0.8cm of o, fill=blue!20] (res_final) {SUSTAINED \\ COMPETITIVE \\ ADVANTAGE};
+
+    % Paths with "YES" and "NO"
+    \path[->, thick] (v) edge node[above] {YES} (r);
+    \path[->, thick] (r) edge node[above] {YES} (i);
+    \path[->, thick] (i) edge node[above] {YES} (o);
+    \path[->, thick] (o) edge node[above] {YES} (res_final);
+
+    \path[->, thick] (v) edge node[left] {NO} (res_v);
+    \path[->, thick] (r) edge node[left] {NO} (res_r);
+    \path[->, thick] (i) edge node[left] {NO} (res_i);
+    \path[->, thick] (o) edge node[left] {NO} (res_o);
+
+\end{tikzpicture}
+
+\subsubsection{Building or Buying Resources}
+\textbf{Building:} Develop resources internally through R\&D, training, or culture.
+Takes time and may require significant investment but can create unique
+capabilities.
+
+\textbf{Buying:} Acquire resources through mergers, acquisitions, or partnerships.
+Faster but may be costly and risk integration issues. Can be effective for
+acquiring complementary resources or entering new markets.
+
+\begin{callout}
+    Successful M\&A integrates activities that are related yet complementary,
+    creating synergies that enhance competitive advantage. For example, Disney
+    acquiring Pixar combined Disney's storytelling and distribution with Pixar's
+    cutting-edge animation technology, resulting in a stronger competitive position
+    in the animation industry.
+\end{callout}
+
+\section{Firm Growth Theory}
+Only expand into a market or start a new activity if you can leverage your core
+resources and capabilities to create a competitive advantage. This is the basis
+for the \textbf{Related Diversification} strategy, which focuses on entering markets or
+activities that are related to the firm's existing operations, allowing it to
+leverage its core competencies and achieve synergies.
+
+In contrast, \textbf{Unrelated Diversification} involves entering markets or activities that are not
+related to the firm's existing operations, which can be riskier and may not
+leverage the firm's core competencies effectively. Turning into a conglomerate
+can lead to inefficiencies and lack of focus, as the firm may struggle to
+manage diverse businesses effectively.
+
