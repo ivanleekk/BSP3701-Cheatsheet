@@ -74,7 +74,7 @@ resource use.
     \end{pgfonlayer}
 
     % === Divisional Structure ===
-    \node[box, fill=green!10, right=35mm of ceof] (ceod) {CEO (Divisional)};
+    \node[box, fill=green!10, right=32mm of ceof] (ceod) {CEO (Divisional)};
 
     \node[box, fill=yellow!20, below left=4mm and -5mm of ceod] (diva) {Div A (Prod A)};
     \node[box, fill=yellow!20, below right=4mm and -5mm of ceod] (divb) {Div B (Prod B)};
@@ -102,22 +102,24 @@ resource use.
 \textbf{Question Marks:} Low share/high growth. Invest to grow or divest. \\
 \textbf{Cash Cows:} High share/low growth. Milk profits, minimal investment.
 
-\begin{tikzpicture}[
-        scale=1, transform shape,
-        font=\sffamily\tiny,
-        box/.style={minimum size=2.2cm, draw, thick, align=center}
-    ]
-    % The Grid
-    \node[box, fill=yellow!20] (stars) at (0,2.2) {\textbf{STARS} \\ \textit{High Growth} \\ \textit{High Share}}; \node[box, fill=orange!20] (question) at (2.2,2.2) {\textbf{QUESTION} \\ \textbf{MARKS} \\ \textit{High Growth} \\ \textit{Low Share}}; \node[box, fill=green!20] (cash) at (0,0) {\textbf{CASH COWS} \\ \textit{Low Growth} \\ \textit{High Share}}; \node[box, fill=red!20] (dogs) at (2.2,0) {\textbf{DOGS} \\ \textit{Low Growth} \\ \textit{Low Share}};
+\begin{center}
+    \begin{tikzpicture}[
+            scale=1.2, transform shape,
+            font=\sffamily\scriptsize,
+            box/.style={minimum size=2.2cm, draw, thick, align=center}
+        ]
+        % The Grid
+        \node[box, fill=yellow!20] (stars) at (0,2.2) {\textbf{STARS} \\ \textit{High Growth} \\ \textit{High Share}}; \node[box, fill=orange!20] (question) at (2.2,2.2) {\textbf{QUESTION} \\ \textbf{MARKS} \\ \textit{High Growth} \\ \textit{Low Share}}; \node[box, fill=green!20] (cash) at (0,0) {\textbf{CASH COWS} \\ \textit{Low Growth} \\ \textit{High Share}}; \node[box, fill=red!20] (dogs) at (2.2,0) {\textbf{DOGS} \\ \textit{Low Growth} \\ \textit{Low Share}};
 
-    % Axis Labels (Y-axis: Market Growth)
-    \node[rotate=90] at (-1.5,1.1) {\textbf{Market Growth Rate}}; \node[rotate=90] at (-1.2,2.2) {High}; \node[rotate=90]
-    at (-1.2,0) {Low};
+        % Axis Labels (Y-axis: Market Growth)
+        \node[rotate=90] at (-1.5,1.1) {\textbf{Market Growth Rate}}; \node[rotate=90] at (-1.2,2.2) {High}; \node[rotate=90]
+        at (-1.2,0) {Low};
 
-    % Axis Labels (X-axis: Market Share)
-    \node at (1.1,-1.5) {\textbf{Relative Market Share}}; \node at (0,-1.2) {High}; \node at (2.2,-1.2) {Low};
+        % Axis Labels (X-axis: Market Share)
+        \node at (1.1,-1.5) {\textbf{Relative Market Share}}; \node at (0,-1.2) {High}; \node at (2.2,-1.2) {Low};
 
-\end{tikzpicture}
+    \end{tikzpicture}
+\end{center}
 
 \textbf{Strategy:} Allocate resources based on quadrant. Invest in Stars/Question
 Marks, milk Cash Cows, divest Dogs. Regularly reassess as market conditions
@@ -132,6 +134,7 @@ as ``partners'' to maintain service quality.
 
 \subsubsection{Comparative Performance (2014)}
 \begin{center}
+    \scriptsize
     \begin{tabular}{@{}lll@{}}
         \toprule
         \textbf{Metric} & \textbf{Airlines (American)} & \textbf{Starbucks} \\ \midrule Revenue & $\$42.6$ Billion & $\$16.45$ Billion \\ Net
